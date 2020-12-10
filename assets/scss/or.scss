@@ -1,0 +1,40 @@
+.or_wrapper{
+  width: 100%;
+  display: block;
+  background-image: url("../assets/img/default/bg_01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  .or_inner{
+    padding: 50px 0px;
+    .content_title{
+      margin-bottom: 50px
+    }
+  }
+  .or_text_content{
+    background-image: url("../assets/img/default/text_bg_mid.png");
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: center top;
+
+    .or_text_inner{
+      width: 86.6%;
+      margin: 0 auto;
+      p{
+        font-size: 17.5px;
+        line-height: 2.5;
+        color: #000000;
+        font-weight: bold;
+      }
+      .large_text{
+        font-size: 26px;
+        line-height: 2.3;
+        padding-bottom: 50px;
+      }
+      .text_add_bottom{
+        &__50{
+          padding-bottom: 50px;
+        }
+      }
+    }
+  }
+}

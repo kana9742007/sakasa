@@ -1,0 +1,19 @@
+
+.point_wrapper{
+  width: 100%;
+  display: block;
+  background-image: url("../assets/img/default/bg_02.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .point_inner{
+    padding: 50px 0px;
+    .content_title{
+      margin-bottom: 50px
+    }
+  }
+
+  .card_contents{
+    margin-bottom: 100px;
+  }
+}

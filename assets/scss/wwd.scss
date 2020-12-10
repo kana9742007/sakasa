@@ -1,0 +1,96 @@
+.wwd_wrapper{
+  width: 100%;
+  display: block;
+  background-image: url("../assets/img/default/bg_02.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wwd_inner{
+    padding: 50px 0px 100px;
+    .content_title{
+      margin-bottom: 50px
+    }
+  }
+  .wwd_text_content{
+    background-image: url("../assets/img/default/text_bg_min.png");
+    background-repeat: no-repeat;
+    background-size: 180%;
+    background-position: center top;
+
+    .wwd_text_inner{
+      width: 86.6%;
+      margin: 0 auto;
+      p{
+        font-size: 17.5px;
+        line-height: 2.5;
+        color: #000000;
+        font-weight: bold;
+      }
+      .midium_text{
+        font-size: 22.5px;
+        line-height: 2.2;
+        span{
+          width: 25.53%;
+          display: inline-block;
+          max-width: 191.49px;
+          img{
+            width: 100%;
+          }
+        }
+      }
+      .text_add_bottom{
+
+        &__48{
+          padding-bottom: 48px;
+        }
+
+        &__50{
+          padding-bottom: 50px;
+        }
+      }
+      .font-bold{
+        font-weight: bold;
+      }
+    }
+  }
+
+  .bottom_arrow{
+    img{
+      display: block;
+      margin: 0 auto;
+      width: 9.2%;
+      max-width: 69.67px;
+    }
+  }
+  .card_contents{
+    margin: 50px 0px 100px;
+  }
+  .attention_card{
+    width: 92.3%;
+    max-width: 650px;
+    background-color: #F9F9F9;
+    border-radius: 50px;
+    margin: 0 auto;
+    display: block;
+
+    .attend_inner{
+      width: 92.3%;
+      margin: 0 auto;
+      padding: 25px 0px 52.5px;
+
+      .font-red{
+        font-size: 22.5px;
+        color: #FF0000;
+        padding-bottom: 50px;
+        line-height: 1.7;
+        text-align: center;
+        font-weight: bold;
+      }
+      .detail_text{
+        font-size: 15px;
+        color: #3C3C3C;
+        line-height: 1.8;
+      }
+    }
+  }
+}

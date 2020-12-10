@@ -1,0 +1,36 @@
+
+.uv_wrapper{
+  width: 100%;
+  display: block;
+  background-image: url("../assets/img/default/bg_01.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .uv_inner{
+    padding: 50px 0px 100px;
+    .content_title{
+      margin-bottom: 50px
+    }
+  }
+
+  .card_contents{
+    .card_content{
+      box-shadow: none;
+      .user_name{
+        margin-bottom: 22.3px;
+        font-size: 20px;
+        text-align: center;
+        line-height: 1;
+        font-weight: bold;
+      }
+      .card_title{
+        height: 76.5px;
+        margin-bottom: 10px;
+        h3{
+          font-size: 22.5px;
+          line-height: 1.7;
+        }
+      }
+    }
+  }
+}

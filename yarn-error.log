@@ -1,0 +1,47 @@
+Arguments: 
+  /Users/kana9742007/.nvm/versions/node/v12.18.3/bin/node /usr/local/bin/yarn run sass
+
+PATH: 
+  /Users/kana9742007/.composer/vendor/bin:/Users/kana9742007/.nvm/versions/node/v12.18.3/bin:/Users/kana9742007/.nodebrew/current/bin:/Users/kana9742007/.rbenv/shims:/Users/kana9742007/.rbenv/bin:/Users/kana9742007/.rbenv/shims:/Users/kana9742007/.rbenv/shims:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin:/Users/kana9742007/flutter/bin:/Users/kana9742007/.nodebrew/current/bin:/Users/kana9742007/.nodebrew/current/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  12.18.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/kana9742007/Desktop/work/sakasa/package.json: Unexpected token } in JSON at position 371
+      at JSON.parse (<anonymous>)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/usr/local/lib/node_modules/yarn/lib/cli.js:304:30)
+      at /usr/local/lib/node_modules/yarn/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "sakasa",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "node-sass": "^5.0.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start:nodemon": "nodemon -e scss -x \"yarn run sass\"",
+      "sass": "node-sass -r -w assets/scss/style.scss assets/style.css",
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

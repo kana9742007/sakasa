@@ -1,0 +1,62 @@
+
+.os_wrapper{
+  width: 100%;
+  display: block;
+  background-image: url("../assets/img/default/bg_02.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .os_inner{
+    padding: 50px 0px;
+    .content_title{
+      margin-bottom: 50px
+    }
+  }
+
+  .card_contents{
+    margin-bottom: 100px;
+    .card_content{
+      .card_title{
+        margin-bottom: 10px;
+        h3{
+          font-size: 27px;
+        }
+      }
+    }
+  }
+  .long_card_contents{
+    .card_content{
+      .card_inner{
+        padding: 25px 0px 50px;
+        .card_content_title{
+          font-size: 22.5px;
+          margin-bottom: 50px;
+          span{
+            width: 101px;
+            display: inline-block;
+            img{
+              width: 100%;
+            }
+          }
+        }
+
+        .inner_content{
+          margin-bottom: 50px;
+          .card_title{
+            margin-bottom: 10px;
+            h3{
+              font-size: 22.5px;
+            }
+          }
+          .card_img{
+            margin: 0px;
+            box-shadow: 6px 6px 6px #00000029;
+          }
+        }
+        .no-bottom{
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

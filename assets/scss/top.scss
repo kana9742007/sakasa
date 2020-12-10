@@ -1,0 +1,14 @@
+.top_wrapper{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  img{
+    width: 100%;
+  }
+  .top_inner{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 47%;
+    left: 50%;
+  }
+}

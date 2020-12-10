@@ -1,0 +1,17 @@
+{
+  "name": "sakasa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:nodemon": "nodemon -e scss -x \"yarn run sass\"",
+    "sass": "node-sass -r -w assets/scss/style.scss assets/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

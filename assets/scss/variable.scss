@@ -1,0 +1,13 @@
+//レスポンシブ（min）
+@mixin sp ($spWidth: 480px){
+  @media screen and (max-width: $spWidth) {
+    @content;
+  }
+}
+
+// レスポンシブ(max)
+@mixin pc ($pcWidth: 1440px){
+  @media screen and (min-width: $pcWidth) {
+    @content;
+  }
+}

@@ -1,0 +1,184 @@
+header{
+  width: 100%;
+  background-color: #ED393B;
+  box-shadow: 6px 6px 6px #00000029;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  .header_inner{
+    padding: 7px 0px;
+  }
+  .header{
+    &__top{
+      margin: 0 auto;
+      display: block;
+      background-color: #FFFFFF;
+      font-weight: bold;
+      width: 123px;
+      font-size: 10px;
+      text-align: center;
+      color: #ED393B;
+      padding: 7.5px 0px 7.5px 0px;
+      border-radius: 55px;
+    }
+
+    &__bottom{
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+      font-size: 20px;
+      span{
+        display: block;
+        width: 75.58px;
+        padding-right: 7.4px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.content_title{
+  color: #000000;
+  text-align: center;
+  h2{
+    font-size: 25px;
+    padding-bottom: 13px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 15px;
+    padding-bottom: 50px;
+    font-weight: bold;
+  }
+  span{
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    width: 56px;
+    height: 2px;
+    background-color: #000000;
+  }
+}
+
+// カーど
+.card_content{
+  margin: 0 auto;
+  width: 86.6%;
+  max-width: 650px;
+  background-color: #F9F9F9;
+  box-shadow: 6px 6px 6px #00000029;
+  border-radius: 50px;
+  margin-bottom: 50px;
+
+  .card_inner{
+    width: 92.3%;
+    margin: 0 auto;
+    padding: 25px 0px 23px;
+    .card_title{
+      width: 100%;
+      display: block;
+      position: relative;
+      height: 43px;
+      margin-bottom: 34.5px;
+      h3{
+        text-align: center;
+        font-size: 27.5px;
+        font-weight: bold;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        z-index: 1;
+      }
+      img{
+        width: 100%;
+        position: absolute;
+        bottom: 0px;
+        left:0px;
+      }
+    }
+
+    .card_img{
+      width: 100%;
+      margin-bottom: 25.5px;
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3C3C3C;
+    }
+  }
+}
+
+// カーど inkなし
+.card_content__noink{
+  margin: 0 auto;
+  width: 86.6%;
+  max-width: 650px;
+  background-color: #F9F9F9;
+  box-shadow: 6px 6px 6px #00000029;
+  border-radius: 50px;
+  margin-bottom: 50px;
+
+  .card_inner{
+    width: 92.3%;
+    margin: 0 auto;
+    padding: 25px 0px 23px;
+
+    .card_title{
+      width: 100%;
+      display: block;
+      margin-bottom: 25px;
+      h3{
+        text-align: center;
+        font-size: 22.5px;
+        line-height: 1.7;
+        font-weight: bold;
+      }
+    }
+
+    .card_img{
+      width: 100%;
+      margin-bottom: 25.5px;
+    }
+
+    p{
+      font-size: 15px;
+      line-height: 1.8;
+      color: #3C3C3C;
+    }
+  }
+}
+
+.no-bottom{
+  margin-bottom: 0px;
+}
+
+.contact_button{
+  font-size: 23px;
+  display: block;
+  width: 305px;
+  text-align: center;
+  max-width: 610px;
+  border-radius: 55px;
+  padding: 10px 0px;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-weight: bold;
+  cursor: pointer;
+
+  &__color-red{
+    background-color: #ED393B;
+  }
+
+  &__color-black{
+    background-color: #000000;
+  }
+}
