@@ -2,6 +2,10 @@
   width: 100%;
   position: relative;
   z-index: 1;
+  margin-top: 64.91px;
+  @media screen and(max-width: 767px) {
+    margin-top: 0px;
+  }
   img{
     width: 100%;
   }
@@ -10,5 +14,9 @@
     transform: translate(-50%, -50%);
     top: 47%;
     left: 50%;
+    display: none;
+    @media screen and(max-width: 767px) {
+      display: block;
+    }
   }
 }

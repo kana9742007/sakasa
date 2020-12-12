@@ -2,19 +2,20 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title></title>
-    <link rel="icon" type="image/png" sizes="16x16" href="">
-    <link rel="icon" type="image/png" sizes="32x32" href="">
+    <title>TRIET</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/default/TRIET_favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/default/TRIET_favicon.png">
     <link rel="stylesheet" href="assets/style.css">
     <meta property="og:url" content="">
     <meta property="og:locale" content="ja_JP">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="">
-    <meta name="description" content="">
+    <meta property="og:site_name" content="TRIET">
+    <meta name="description" content="スマホがジムに変わる？">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="http://sakasa-test.s3-website-ap-northeast-1.amazonaws.com/assets/img/default/TRIET_OGP.png">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -33,7 +34,10 @@
       </div>
     </header>
     <div class="top_wrapper">
-      <img src="assets/img/top/00_KV_sp_final.png" alt="スマホがジムに変わる？">
+      <picture>
+        <source media="(min-width: 767px)" srcset="assets/img/top/TRIET_KV_pr_final_1211_final.png">
+        <img srcset="assets/img/top/00_KV_sp_final.png" alt="スマホがジムに変わる？">
+      </picture>
       <div class="top_inner">
         <a href="#" class="contact_button contact_button__color-black">お申し込みはこちら</a>
       </div>
@@ -62,7 +66,7 @@
                 <h3>一生使える知識</h3>
                 <img src="assets/img/default/title_line.png">
               </div>
-              <img class="card_img" src="assets/img/point/point_2.png">
+              <img class="card_img" src="assets/img/point/point_3.png">
               <p>トレーニングや身体についての授業を理論的に行い、一生使える知識を惜しむことなく提供！</p>
             </div>
           </li>
@@ -72,8 +76,11 @@
                 <h3>24時間LINEサポート</h3>
                 <img src="assets/img/default/title_line.png">
               </div>
-              <img class="card_img" src="assets/img/point/point_3.png">
+              <img class="card_img" src="assets/img/point/point_2.png">
               <p>日々の食事やトレーニングの悩み、などどんなことでもLINEで簡単に相談可能！</p>
+              <p class="color-red-text">
+                ※本サービスはLINEを利用します
+              </p>
             </div>
           </li>
         </ul>
@@ -115,12 +122,15 @@
               その先の喜びを知り、<br>
               一生好きなあなたへ。
             </p>
+            <p class="semi-midium_text font-bold text_add_bottom__50">
+              今、変わろう。
+            </p>
             <p class="semi-midium_text font-bold">
-              今、変わろう。<br>
               <span><img src="assets/img/default/black_logo.png"></span>
               とともに。
             </p>
           </div>
+          <img class="bg_content" src="assets/img/default/text_bg.png">
         </div>
       </div>
     </div>
@@ -153,6 +163,7 @@
               身につけてもらうのが目的です。
             </p>
           </div>
+          <img class="bg_content" src="assets/img/default/text_bg_min.png">
         </div>
         <div class="bottom_arrow">
           <img src="assets/img/wwd/arrow.png">
@@ -234,11 +245,12 @@
               根拠のないダイエットとは<br>
               さようなら。
             </p>
-            <p class="text_add_bottom__50">
+            <p class="text_add_bottom__100">
               理論的なダイエットで<br>
               簡単に痩せよう。
             </p>
           </div>
+          <img class="bg_content" src="assets/img/default/text_bg_mid.png">
         </div>
         <a href="#" class="contact_button contact_button__color-red">お申し込みはこちら</a>
       </div>
@@ -271,7 +283,7 @@
               <p>これからのパートナーと共にカウンセリングを行い、あなたに合うトレーニングメニューを作ります。</p>
             </div>
           </li>
-          <li class="card_content no-bottom">
+          <li class="card_content">
             <div class="card_inner">
               <div class="card_title">
                 <h3>講義を通じて知識を学ぶ</h3>
@@ -281,9 +293,29 @@
               <p>身体やトレーニングのことなどオンライン動画授業を通じて正しい知識を教えます。</p>
             </div>
           </li>
+          <li class="card_content">
+            <div class="card_inner">
+              <div class="card_title">
+                <h3>トレーニング器具が届く</h3>
+                <img src="assets/img/default/title_line.png">
+              </div>
+              <img class="card_img" src="assets/img/os/os_04.jpg">
+              <p>0.5畳で収納可能な可変式ダンベルとインクラインベンチ台を⾃宅へお届けします。</p>
+            </div>
+          </li>
+          <li class="card_content no-bottom">
+            <div class="card_inner">
+              <div class="card_title">
+                <h3>自宅で本格トレーニング</h3>
+                <img src="assets/img/default/title_line.png">
+              </div>
+              <img class="card_img" src="assets/img/os/os_05.jpg">
+              <p>あなたに合ったトレーニングメニューを基に、ご自宅でトレーニングを行います。</p>
+            </div>
+          </li>
         </ul>
         <div class="long_card_contents">
-          <div class="card_content">
+          <div class="card_content no-bottom">
             <div class="card_inner">
               <h2 class="card_content_title">
                 <span><img src="assets/img/default/black_logo.png"></span>
@@ -357,7 +389,7 @@
               <img class="card_img" src="assets/img/uv/uv_02.png">
               <p class="user_name">会社経営（29歳）</p>
               <p>今まで何度もダイエットに挑戦しては、失敗してきました。仕事も忙しく、付き合いでお酒を飲むこともあります。<br>
-                それでも続けられているのは、TRIETでの日々のフィードバックがあり、いつでも気軽に相談できたからだと思います。
+                それでも続けられているのは、TRIETでの日々のフィードバックがあり、いつでも気軽に相談できたからだと思います。<br>
                 また、忙しい自分には「自宅で完結」というのも最高でした。<br>
                 30分あればトレーニング出来ますから笑
               </p>
@@ -369,8 +401,8 @@
     <div class="price_wrapper">
       <div class="price_inner">
         <div class="content_title">
-          <h2>USER’S VOICE</h2>
-          <p>利用者の声</p>
+          <h2>PRICE</h2>
+          <p>価格表</p>
           <span></span>
         </div>
         <div class="price_content">
@@ -384,7 +416,7 @@
             </p>
           </div>
           <ul class="card_contents">
-            <li class="card_content no-bottom">
+            <li class="card_content add_bottom__100">
               <div class="card_inner min_width">
                 <div class="small_font">
                   <h2>BASIC.</h2>
@@ -434,16 +466,15 @@
           </ul>
         </div>
         <img class="plus_img" src="assets/img/price/plus.svg">
-        <div class="price_content min_space">
+        <div class="price_content">
           <div class="ink_title">
             <h3>入会金</h3>
             <img src="assets/img/default/title_line.png">
           </div>
-          <p class="price_text">¥5,000-</p>
+          <p class="price_text">¥10,000-</p>
           <div class="price_image_text align-left">
             <p>入会金にはインクラインベンチと可変式ダンベル、トレーニングマットの購入代金も含まれます。<br>
-              また通常は24kg×2の可変式ダンベルのお届けになりますが、男性で本格的に筋力トレーニングをしたい方は40kg×2のセットをおすすめしております。その場合の入会金の金額は<br>
-              55,000円（税別）です。
+              また通常は24kg×2の可変式ダンベルのお届けになりますが、男性で本格的に筋力トレーニングをしたい方は40kg×2のセットをおすすめしております。その場合の入会金の金額は55,000円（税別）です。
             </p>
             <p class="color-red">
               ※ご近所のトレーニングジムでのメニュー作成も可能でございます
@@ -452,12 +483,18 @@
           <ul class="card_contents">
             <li class="card_content add_bottom">
               <div class="card_inner min_width">
+                <div class="card_title min_font-size">
+                  <h3>0.5畳あればOK</h3>
+                </div>
                 <span class="black_bg_text black_bg_text__w175">インクラインベンチ台</span>
                 <img class="card_img card_img__w155" src="assets/img/price/price_01.png">
                 <span class="black_bg_text black_bg_text__w175">可変式ダンベル</span>
                 <img class="card_img card_img__w155" src="assets/img/price/price_02.png">
                 <span class="black_bg_text black_bg_text__w175">トレーニングマット</span>
                 <img class="card_img card_img__w155 no-bottom" src="assets/img/price/price_03.png">
+                <p class="color-red-text">
+                  ※写真はイメージです。送付する器具のデザイン等に関しては、実際のものと異なる場合があります。詳しくは申込みページにてご確認ください。
+                </p>
               </div>
             </li>
           </ul>
@@ -577,11 +614,23 @@
               </p>
             </div>
           </div>
-          <div class="faq_content no-bottom">
+          <div class="faq_content">
             <p class="faq_number">Q.09</p>
             <div class="faq_content_inner">
               <p class="faq_title">
                 筋肉が付きすぎませんか。
+              </p>
+              <span></span>
+              <p class="faq_detail">
+                テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　
+              </p>
+            </div>
+          </div>
+          <div class="faq_content no-bottom">
+            <p class="faq_number">Q.10</p>
+            <div class="faq_content_inner">
+              <p class="faq_title">
+                LINEを使わずに<br>サービスの利用は可能ですか。
               </p>
               <span></span>
               <p class="faq_detail">
@@ -596,9 +645,9 @@
       <div class="footer_inner">
         <img class="footer_logo" src="assets/img/default/header_logo.png">
         <ul class="footer_nav">
-          <li href="http://sakasa.co.jp/">運営会社</li>
-          <li href="#">利用規約</li>
-          <li href="#">問い合わせ</li>
+          <li><a href="http://sakasa.co.jp/">運営会社</a></li>
+          <li><a href="">利用規約</a></li>
+          <li><a href="https://thebase.in/inquiry/triet-official-ec">問い合わせ</a></li>
         </ul>
       </div>
     </footer>

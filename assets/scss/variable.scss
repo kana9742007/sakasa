@@ -1,5 +1,5 @@
 //レスポンシブ（min）
-@mixin sp ($spWidth: 480px){
+@mixin sp ($spWidth: 767px){
   @media screen and (max-width: $spWidth) {
     @content;
   }

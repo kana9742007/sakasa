@@ -33,7 +33,7 @@
       left: 50%;
       transform: translate(-50%,-50%);
       font-size: 22.5px;
-      font-weight: bold;
+      font-weight: 800;
     }
     .faq_content_inner{
       width: 76%;
@@ -46,6 +46,7 @@
         padding-bottom: 25px;
         line-height: 2.1;
         text-align: center;
+        font-weight: bold;
       }
       span{
         width: 100%;

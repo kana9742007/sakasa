@@ -6,7 +6,7 @@
   background-repeat: repeat;
   background-size: 54%;
   .os_inner{
-    padding: 50px 0px;
+    padding: 50px 0px 100px;
     .content_title{
       margin-bottom: 50px
     }
@@ -16,7 +16,6 @@
     margin-bottom: 100px;
     .card_content{
       .card_title{
-        margin-bottom: 10px;
         h3{
           font-size: 27px;
         }
@@ -29,7 +28,9 @@
         padding: 25px 0px 50px;
         .card_content_title{
           font-size: 22.5px;
-          margin-bottom: 50px;
+          margin: 5px auto 50px;
+          width: 96.6%;
+          font-weight: 800;
           span{
             width: 101px;
             display: inline-block;
@@ -42,7 +43,6 @@
         .inner_content{
           margin-bottom: 50px;
           .card_title{
-            margin-bottom: 10px;
             h3{
               font-size: 22.5px;
             }
