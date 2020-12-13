@@ -53,7 +53,7 @@ header{
     justify-content: left;
     align-items: center;
     background-color: #ffffff;
-    padding: 26px 0px 25.28px 7%;
+    padding: 19.5px 0px 19.5px 7%;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -73,7 +73,7 @@ header{
     }
     a{
       font-weight: bold;
-      font-size: 25px;
+      font-size: 18.75px;
       margin-right: 5%;
     &:last-child{
       margin-right: 0px;
@@ -209,7 +209,7 @@ footer{
   width: 100%;
   background-color: #000000;
   .footer_inner{
-    padding: 39px 0px;
+    padding: 29.25px 0px;
     width: 86.6%;
     margin: 0 auto;
     display: flex;
@@ -219,9 +219,10 @@ footer{
       padding: 17px 0px;
     }
     .footer_logo{
-      max-width: 152px;
+      max-width: 114px;
       width: 23%;
-      margin-right: 100px;
+      margin-right: 75px;
+      margin-bottom: 0px;
       @media screen and(max-width: 767px) {
         margin-right: 0px;
         margin-bottom:16.5px;
@@ -234,13 +235,14 @@ footer{
       }
       li{
         display: block;
-        margin-bottom: 17px;
-        margin-right: 100px;
+        margin-bottom: 5px;
+        margin-right: 75px;
         @media screen and(max-width: 767px) {
           margin-right: 0px;
+          margin-bottom: 17px;
         }
         a{
-          font-size: 20px;
+          font-size: 15px;
           color: #ffffff;
           @media screen and(max-width: 767px) {
             font-size: 10px;
@@ -261,18 +263,20 @@ footer{
     font-size: 25px;
     padding-bottom: 13px;
     font-weight: 800;
+    letter-spacing: 3.85px;
     @media screen and(min-width: 767px) {
-      font-size: 50px;
-      padding-bottom: 17px;
+      font-size: 37.5px;
+      padding-bottom: 12.75px;
     }
   }
   p{
     font-size: 15px;
     padding-bottom: 50px;
     font-weight: bold;
+    letter-spacing: 2.31px;
     @media screen and(min-width: 767px) {
-      font-size: 30px;
-      padding-bottom: 100px;
+      font-size: 22.5px;
+      padding-bottom: 71.6px;
     }
   }
   span{
@@ -283,8 +287,8 @@ footer{
     height: 3.5px;
     background-color: #000000;
     @media screen and(min-width: 767px) {
-      height: 7px;
-      width: 112px;
+      height: 5.25px;
+      width: 84px;
     }
   }
 }
@@ -293,13 +297,14 @@ footer{
 .card_content{
   margin: 0 auto;
   width: 92.6%;
-  max-width: 650px;
+  max-width: 487.5px;
   background-color: #F9F9F9;
   box-shadow: 6px 6px 6px #00000029;
   border-radius: 50px;
   margin-bottom: 50px;
   @media screen and(min-width: 767px) {
-    margin-bottom: 100px;
+    width: 100%;
+    margin-bottom: 75px;
   }
 
   .card_inner{
@@ -307,7 +312,7 @@ footer{
     margin: 0 auto;
     padding: 25px 0px 25px;
     @media screen and(min-width: 767px) {
-      padding: 50px 0px 50px;
+      padding: 37.5px 0px 37.5px;
     }
     .card_title{
       width: 100%;
@@ -317,11 +322,11 @@ footer{
       margin-bottom: 25px;
       @media screen and(min-width: 767px) {
         height: 60px;
-        margin-bottom: 70px;
+        margin-bottom: 25.6px;
       }
       h3{
         text-align: center;
-        font-size: 22.5px;
+        font-size: 27.5px;
         font-weight: 800;
         position: absolute;
         top: 0px;
@@ -330,7 +335,7 @@ footer{
         width: 100%;
         z-index: 1;
         @media screen and(min-width: 767px) {
-          font-size: 55px;
+          font-size: 41.25;
         }
       }
       img{
@@ -351,7 +356,7 @@ footer{
       width: 100%;
       margin-bottom: 25px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 50px;
+        margin-bottom: 37.5px;
       }
     }
 
@@ -362,8 +367,9 @@ footer{
       display: block;
       width: 96.6%;
       margin: 0 auto;
+      letter-spacing: 2.16px;
       @media screen and(min-width: 767px) {
-        font-size: 28px;
+        font-size: 21px;
       }
     }
   }
@@ -373,13 +379,14 @@ footer{
 .card_content__noink{
   margin: 0 auto;
   width: 92.6%;
-  max-width: 650px;
+  max-width: 487.5px;
   background-color: #F9F9F9;
   box-shadow: 6px 6px 6px #00000029;
   border-radius: 50px;
   margin-bottom: 50px;
   @media screen and(min-width: 767px) {
-    margin-bottom: 100px;
+    width: 100%;
+    margin-bottom: 70px;
   }
 
   .card_inner{
@@ -387,13 +394,16 @@ footer{
     margin: 0 auto;
     padding: 25px 0px 25px;
     @media screen and(min-width: 767px) {
-      padding: 50px 0px 50px;
+      padding: 37.5px 0px 37.5px;
     }
 
     .card_title{
       width: 100%;
       display: block;
       margin-bottom: 25px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 37.5px;
+      }
       h3{
         text-align: center;
         font-size: 22.5px;
@@ -408,7 +418,7 @@ footer{
       width: 100%;
       margin-bottom: 25px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 50px;
+        margin-bottom: 37.5px;
       }
     }
 
@@ -419,8 +429,9 @@ footer{
       display: block;
       width: 96.6%;
       margin: 0 auto;
+      letter-spacing: 2.16px;
       @media screen and(min-width: 767px) {
-        font-size: 28px;
+        font-size: 21px;
       }
     }
   }
@@ -443,8 +454,8 @@ footer{
   font-weight: bold;
   cursor: pointer;
   @media screen and(min-width: 767px) {
-    font-size: 46px;
-    width: 740px;
+    font-size: 45.75px;
+    width: 531.75px;
   }
 
   &__color-red{
@@ -468,9 +479,10 @@ footer{
     z-index: 4;
     display: none;
     left: 50%;
-    bottom: 16%;
+    bottom: 12%;
     transform: translateX(-50%);
     box-shadow: 6px 6px 6px #00000029;
+    font-weight: normal;
     &:hover{
       background-color: #ffffff;
       color: #ED393B;

@@ -4,33 +4,36 @@
   background-image: url("../assets/img/default/bg_02.png");
   background-repeat: repeat;
   background-size: 54%;
+  @media screen and(min-width: 767px) {
+    background-size: 20%;
+  }
   .price_inner{
     padding: 50px 0px 100px;
     @media screen and(min-width: 767px) {
-      padding: 100px 0px 200px;
+      padding: 75px 0px 150px;
     }
     .content_title{
       margin-bottom: 50px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
       }
     }
   }
 
   .price_content{
     margin: 0 auto;
-    max-width: 650px;
+    max-width: 487.5px;
   }
   .add_bottom__100{
     margin-bottom: 100px;
     @media screen and(min-width: 767px) {
-      margin-bottom: 200px;
+      margin-bottom: 150px;
     }
   }
   .min_space{
     margin-bottom: 50px;
     @media screen and(min-width: 767px) {
-      margin-bottom: 100px;
+      margin-bottom: 75px;
     }
   }
   .ink_title{
@@ -41,8 +44,8 @@
     margin:0 auto 50px;
     max-width: 600px;
     @media screen and(min-width: 767px) {
-      margin:0 auto 100px;
-      height: 60px;
+      margin:0 auto 75px;
+      height: 66px;
     }
     h3{
       text-align: center;
@@ -55,7 +58,7 @@
       width: 100%;
       z-index: 1;
       @media screen and(min-width: 767px) {
-        font-size: 45px;
+        font-size: 33.75px;
       }
     }
     img{
@@ -67,16 +70,22 @@
   }
   .price_image_text{
     text-align: center;
-    font-size: 15px;
-    line-height: 2.5;
-    max-width: 600px;
-    width: 80%;
+    max-width: 487.5px;
+    width: 92.6%;
     display: block;
     margin: 0 auto 43px;
     color: #3C3C3C;
     @media screen and(min-width: 767px) {
-      font-size: 30px;
-      margin: 0 auto 86px;
+      width: 100%;
+      font-size: 22.5px;
+      margin: 0 auto 64.5px;
+    }
+    p{
+      font-size: 15px;
+       line-height: 2.5;
+      @media screen and(min-width: 767px) {
+        font-size: 22.5px;
+      }
     }
   }
   .add_bold{
@@ -89,7 +98,7 @@
     margin: 43.5px 0px 50px;
     color: #FF0000;
     @media screen and(min-width: 767px) {
-      margin: 87px 0px 100px;
+      margin: 65.25px 0px 75px;
     }
   }
 
@@ -103,7 +112,7 @@
       display: block;
       margin: 0 auto 25px;
       @media screen and(min-width: 767px) {
-        margin: 0 auto 50px;
+        margin: 0 auto 37.5px;
       }
     &.no-bottom{
       margin-bottom: 0px;
@@ -115,8 +124,8 @@
       line-height: 1.9;
       font-size: 14px;
       @media screen and(min-width: 767px) {
-        margin-top: 50px;
-        font-size: 28px;
+        margin-top: 37.5px;
+        font-size: 21px;
       }
     }
   }
@@ -133,8 +142,8 @@
       padding-bottom: 25px;
       font-weight: 800;
       @media screen and(min-width: 767px) {
-        font-size: 40px;
-        padding-bottom: 50px;
+        font-size: 30px;
+        padding-bottom: 37.5px;
       }
     }
     span{
@@ -145,8 +154,8 @@
       height: 3.5px;
       background-color: #000000;
       @media screen and(min-width: 767px) {
-        height: 7px;
-        width: 112px;
+        height: 5.27px;
+        width: 84px;
       }
     }
   }
@@ -154,7 +163,7 @@
   .add_bottom{
     margin-bottom: 100px;
     @media screen and(min-width: 767px) {
-      margin-bottom: 200px;
+      margin-bottom: 0px;
     }
   }
 
@@ -170,21 +179,21 @@
     font-size: 12.5px;
     line-height: 1;
     @media screen and(min-width: 767px) {
-      margin: 0 auto 50px;
-      padding: 7px 0px;
-      font-size: 25px;
+      margin: 0 auto 37.5px;
+      padding: 5.27px 0px;
+      font-size: 18.75px;
     }
 
   &__w150{
     width: 150px;
     @media screen and(min-width: 767px) {
-      width: 300px;
+      width: 225px;
     }
   }
   &__w175{
     width: 175px;
     @media screen and(min-width: 767px) {
-      width: 350px;
+      width: 262.5px;
     }
   }
   }
@@ -196,8 +205,8 @@
     margin-bottom: 21.5px!important;
     font-size: 38.5px!important;
     @media screen and(min-width: 767px) {
-      margin-bottom: 45px!important;
-      font-size: 77px!important;
+      margin-bottom: 33.75px!important;
+      font-size: 57.75px!important;
     }
   }
 
@@ -207,14 +216,17 @@
       font-size: 12.5px;
       line-height: 2.2;
       @media screen and(min-width: 767px) {
-        font-size: 24px;
+        font-size: 18px;
       }
     }
   }
   .plus_img{
     width: 9%;
-    max-width: 68px;
+    max-width: 51px;
     margin: 0 auto 57.5px;
     display: block;
+    @media screen and(min-width: 767px) {
+      margin: 0 auto 86.25px;
+    }
   }
 }

@@ -5,15 +5,18 @@
   background-repeat: repeat;
   background-size: 54%;
   overflow: hidden;
+  @media screen and(min-width: 767px) {
+    background-size: 20%;
+  }
   .wwd_inner{
     padding: 50px 0px 100px;
     @media screen and(min-width: 767px) {
-      padding: 100px 0px 200px;
+      padding: 75px 0px 150px;
     }
     .content_title{
       margin-bottom: 100px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 200px;
+        margin-bottom: 150px;
       }
     }
   }
@@ -26,6 +29,10 @@
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 1;
+      display: block;
+      @media screen and(min-width: 767px) {
+        display: none;
+      }
     }
 
     .wwd_text_inner{
@@ -35,7 +42,7 @@
       position: relative;
       z-index: 2;
       @media screen and(min-width: 767px) {
-        margin: 0 auto 88px;
+        margin: 0 auto 66px;
       }
       p{
         font-size: 17.5px;
@@ -45,19 +52,19 @@
         text-align: left;
         @media screen and(min-width: 767px) {
           text-align: center;
-          font-size: 32px;
+          font-size: 24px;
         }
       }
       .midium_text{
         font-size: 22.5px;
         line-height: 2.2;
         @media screen and(min-width: 767px) {
-          font-size: 45px;
+          font-size: 41.25px;
         }
         span{
           width: 25.53%;
           display: inline-block;
-          max-width: 191.49px;
+          max-width: 143.61px;
           img{
             width: 100%;
           }
@@ -84,14 +91,14 @@
       display: block;
       margin: 0 auto;
       width: 9.2%;
-      max-width: 69.67px;
+      max-width: 52.25px;
     }
   }
   .card_contents{
     margin: 50px 0px 100px;
     display: block;
     @media screen and(min-width: 1400px) {
-      margin: 100px 0px 200px;
+      margin: 75px 0px 150px;
       display: flex;
     }
     .is-pc_no-bottom{
@@ -101,16 +108,13 @@
     }
     .card_content__noink{
       @media screen and(min-width: 1400px) {
-        width: 30%;
-        max-width: 600px;
+        width: 31.25%;
+        max-width: 450px;
       }
       .card_title{
         h3{
           @media screen and(min-width: 767px) {
-            font-size: 36px;
-          }
-          @media screen and(min-width: 1500px) {
-            font-size: 41px;
+            font-size: 33.75px;
           }
         }
       }
@@ -132,8 +136,8 @@
       margin: 0 auto 100px;
       padding: 25px 0px 52.5px;
       @media screen and(min-width: 1400px) {
-        margin: 0 auto 200px;
-        padding: 38px 0px 95px;
+        margin: 0 auto 150px;
+        padding: 0px;
       }
 
       .font-red{
@@ -143,9 +147,10 @@
         line-height: 1.7;
         text-align: center;
         font-weight: 800;
+        letter-spacing: 3.46px;
         @media screen and(min-width: 767px) {
-          font-size: 45px;
-          padding-bottom: 92px;
+          font-size: 33.75px;
+          padding-bottom: 37.5px;
         }
       }
       .detail_text{
@@ -155,8 +160,12 @@
         width: 96.6%;
         margin: 0 auto;
         display: block;
+        letter-spacing: 2.46px;
         @media screen and(min-width: 767px) {
-          font-size: 28px;
+          width: 72%;
+          font-size: 21px;
+          text-align: center;
+          line-height: 2.6;
         }
       }
     }

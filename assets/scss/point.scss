@@ -5,6 +5,9 @@
   background-image: url("../assets/img/default/bg_02.png");
   background-repeat: repeat;
   background-size: 54%;
+  @media screen and(min-width: 767px) {
+    background-size: 20%;
+  }
   .point_inner{
     padding: 50px 0px;
     @media screen and(min-width: 767px) {
@@ -13,7 +16,7 @@
     .content_title{
       margin-bottom: 50px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
       }
     }
   }
@@ -32,13 +35,13 @@
     }
     .card_content{
       @media screen and(min-width: 1400px) {
-        width: 30%;
-        max-width: 600px;
+        width: 31.25%;
+        max-width: 450px;
       }
       .card_title{
         h3{
           @media screen and(min-width: 767px) {
-            font-size: 41px;
+            font-size: 41.25px;
           }
           @media screen and(min-width: 1500px) {
             font-size: 51px;
@@ -58,12 +61,13 @@
     color: #FF0000;
     line-height: 1.9;
     font-size: 14px;
+    letter-spacing: 2.16px;
     @media screen and(min-width: 1400px) {
-      margin-top: 20px;
-      font-size: 28px;
+      margin-top: 15px;
+      font-size: 21.75px;
       text-align: center;
-      width: 30%;
-      max-width: 600px;
+      width: 31.25%;
+      max-width: 450px;
       float: right;
       height: 53px;
       padding-right: 2%;

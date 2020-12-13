@@ -4,18 +4,21 @@
   background-image: url("../assets/img/default/bg_01.png");
   background-repeat: repeat;
   background-size: 54%;
+  @media screen and(min-width: 767px) {
+    background-size: 20%;
+  }
   .faq_inner{
     padding: 45px 0px 100px;
     width: 86%;
     max-width: 650px;
     margin: 0 auto;
     @media screen and(min-width: 767px) {
-      padding: 90px 0px 200px;
+      padding: 67.5px 0px 150px;
     }
     .content_title{
       margin-bottom: 50px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
       }
     }
   }
@@ -25,12 +28,12 @@
 
     .faq_content{
       position: relative;
-      max-width: 650px;
+      max-width: 487.5px;
       background-color: #F9F9F9;
       border-radius: 50px;
-      margin-bottom: 67px;
+      margin: 0 auto 67px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 134px;
+        margin: 0 auto 100px;
       }
     }
     .no-bottom{
@@ -41,10 +44,10 @@
       top: 0%;
       left: 50%;
       transform: translate(-50%,-50%);
-      font-size: 22.5px;
+      font-size: 27.5px;
       font-weight: 800;
       @media screen and(min-width: 767px) {
-        font-size: 45px;
+        font-size: 41.25px;
       }
     }
     .faq_content_inner{
@@ -53,7 +56,7 @@
       margin: 0 auto;
       padding: 25px 0px 50px;
       @media screen and(min-width: 767px) {
-        padding: 50px 0px 100px;
+        padding: 64.5px 0px 56.25px;
       }
 
       .faq_title{
@@ -63,8 +66,8 @@
         text-align: center;
         font-weight: bold;
         @media screen and(min-width: 767px) {
-          font-size: 30px;
-          padding-bottom: 50px;
+          font-size: 22.5px;
+          padding-bottom: 37.5px;
         }
       }
       span{
@@ -75,7 +78,7 @@
         margin-bottom: 25px;
         @media screen and(min-width: 767px) {
           height: 1px;
-          margin-bottom: 50px;
+          margin-bottom: 37.5px;
         }
       }
       .faq_detail{
@@ -83,7 +86,7 @@
         color: #3C3C3C;
         line-height: 2.1;
         @media screen and(min-width: 767px) {
-          font-size: 25px;
+          font-size: 18.75px;
         }
       }
     }

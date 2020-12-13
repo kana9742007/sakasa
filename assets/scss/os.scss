@@ -5,15 +5,18 @@
   background-image: url("../assets/img/default/bg_02.png");
   background-repeat: repeat;
   background-size: 54%;
+  @media screen and(min-width: 767px) {
+    background-size: 20%;
+  }
   .os_inner{
     padding: 50px 0px 100px;
     @media screen and(min-width: 767px) {
-      padding: 100px 0px 200px;
+      padding: 75px 0px 150px;
     }
     .content_title{
       margin-bottom: 50px;
       @media screen and(min-width: 767px) {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
       }
     }
   }
@@ -24,12 +27,12 @@
       .card_title{
         margin-bottom: 15px;
         @media screen and(min-width: 767px) {
-          margin-bottom: 30px;
+          margin-bottom: 22.5px;
         }
         h3{
           font-size: 27px;
           @media screen and(min-width: 767px) {
-            font-size: 45px;
+            font-size: 33.75px;
           }
         }
       }
@@ -40,7 +43,7 @@
       .card_inner{
         padding: 25px 0px 50px;
         @media screen and(min-width: 767px) {
-          padding: 50px 0px 100px;
+          padding: 44.75px 0px 75px;
         }
         .card_content_title{
           font-size: 22.5px;
@@ -48,14 +51,15 @@
           width: 96.6%;
           font-weight: 800;
           @media screen and(min-width: 767px) {
-            margin: 10px auto 100px;
-            font-size: 45px;
+            margin: 7.5px auto 78px;
+            font-size: 33.75px;
+            letter-spacing: 3.46px;
           }
           span{
             width: 101px;
             display: inline-block;
             @media screen and(min-width: 767px) {
-              width: 208px;
+              width: 156px;
             }
             img{
               width: 100%;
@@ -64,19 +68,19 @@
         }
 
         .inner_content{
-          margin-bottom: 25px;
+          margin-bottom: 57.5px;
           @media screen and(min-width: 767px) {
-            margin-bottom: 50px;
+            margin-bottom: 86.25px;
           }
           .card_title{
             margin-bottom: 15px;
             @media screen and(min-width: 767px) {
-              margin-bottom: 30px;
+              margin-bottom: 19px;
             }
             h3{
               font-size: 22.5px;
               @media screen and(min-width: 767px) {
-                font-size: 45px;
+                font-size: 33.75px;
               }
             }
           }
