@@ -1,13 +1,14 @@
 header{
   width: 100%;
-  background-color: #ED393B;
-  box-shadow: 6px 6px 6px #00000029;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 98;
   .header_inner{
+    background-color: #ED393B;
+    box-shadow: 6px 6px 6px #00000029;
     padding: 7px 0px;
+    width: 100%;
   }
   .header{
     &__top{
@@ -41,19 +42,190 @@ header{
       }
     }
   }
+  .block_sp{
+    display: block;
+    @media screen and(min-width: 767px) {
+      display: none;
+    }
+  }
+  .header_pc{
+    display: none;
+    justify-content: left;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 26px 0px 25.28px 7%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    box-shadow: 6px 6px 6px #00000029;
+    @media screen and(min-width: 767px) {
+      display: flex;
+    }
+    .header_logo{
+      display: block;
+      margin-right: 5%;
+      max-width: 152px;
+      width: 7%;
+      img{
+        width: 100%;
+      }
+    }
+    a{
+      font-weight: bold;
+      font-size: 25px;
+      margin-right: 5%;
+    &:last-child{
+      margin-right: 0px;
+    }
+    }
+  }
 }
 
+// SP時ヘッダー
+#js-btn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #FFD900;
+  display: none;
+  cursor: pointer;
+  z-index: 100;
+  border-radius: 50px;
+  right: 18px;
+  top: 69.5px;
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+
+  .inner_line {
+    display: block;
+    position: absolute;
+    left: 15.5px;
+    width: 18px;
+    height: 2px;
+    background-color: #ffffff;
+    transition: .5s;
+  }
+
+  #line1 {
+    top: 18.5px;
+  }
+
+  #line2 {
+    top: 23.5px;
+  }
+
+  #line3 {
+    top: 28.5px;
+  }
+}
+
+#nav{
+  transition: .5s;
+  width: 100%;
+  background-color: #ffffff;
+  height: 100vh;
+  z-index: 99;
+  position: fixed;
+  display: block;
+  transform: translateX(100%);
+
+  .links{
+    display: block;
+    a{
+      display: block;
+      margin: 0 auto 37.8px;
+    &:last-child{
+      margin-bottom: 0px;
+    }
+    }
+  }
+
+  ul{
+    transition: transform .5s .1s;
+    margin-bottom: 37.8px;
+    padding-top: 110px;
+    .header_logo{
+      width: 125.73px;
+      display: block;
+      margin: 0px 0px 46px 8%;
+      img{
+        width:100%;
+      }
+    }
+    p{
+      font-size: 20px;
+      padding-bottom: 20px;
+      padding-left: 8%;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+      font-weight: bold;
+    }
+    li{
+      margin: 0 auto;
+      width: 100%;
+      display: inline-flex;
+
+      a{
+        padding: 18px 8%;
+        color: #000000;
+        cursor: pointer;
+        font-size: 14px;
+        display: block;
+        width: 100%;
+      }
+    }
+    a:hover{
+      background-color:rgba(255,231,115,0.6);
+    }
+  }
+}
+
+// アクティブ
+.is-active {
+  #js-btn{
+    #line1 {
+      transform: rotate(-45deg);
+      top: 24px!important;
+    }
+
+    #line2 {
+      opacity: 0;
+    }
+
+    #line3 {
+      transform: rotate(45deg);
+      top: 24px!important;
+    }
+  }
+
+  #nav{
+    transform: translateX(0px);
+  }
+}
+
+// フッター
 footer{
   width: 100%;
   background-color: #000000;
   .footer_inner{
-    padding: 17px 0px;
+    padding: 39px 0px;
     width: 86.6%;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    @media screen and(max-width: 767px) {
+      display: block;
+      padding: 17px 0px;
+    }
     .footer_logo{
       max-width: 152px;
       width: 23%;
-      margin-bottom:16.5px
+      margin-right: 100px;
+      @media screen and(max-width: 767px) {
+        margin-right: 0px;
+        margin-bottom:16.5px;
+      }
     }
     .footer_nav{
       display: flex;
@@ -61,16 +233,21 @@ footer{
         display: block;
       }
       li{
+        display: block;
         margin-bottom: 17px;
-        margin-right: 20px;
+        margin-right: 100px;
         @media screen and(max-width: 767px) {
           margin-right: 0px;
         }
         a{
-          font-size: 10px;
+          font-size: 20px;
           color: #ffffff;
+          @media screen and(max-width: 767px) {
+            font-size: 10px;
+          }
         }
       &:last-child{
+        margin-right: 0px;
         margin-bottom: 0px;
       }
       }
@@ -84,19 +261,31 @@ footer{
     font-size: 25px;
     padding-bottom: 13px;
     font-weight: 800;
+    @media screen and(min-width: 767px) {
+      font-size: 50px;
+      padding-bottom: 17px;
+    }
   }
   p{
     font-size: 15px;
     padding-bottom: 50px;
     font-weight: bold;
+    @media screen and(min-width: 767px) {
+      font-size: 30px;
+      padding-bottom: 100px;
+    }
   }
   span{
     margin: 0 auto;
     display: block;
     font-weight: bold;
     width: 56px;
-    height: 2px;
+    height: 3.5px;
     background-color: #000000;
+    @media screen and(min-width: 767px) {
+      height: 7px;
+      width: 112px;
+    }
   }
 }
 
@@ -109,19 +298,26 @@ footer{
   box-shadow: 6px 6px 6px #00000029;
   border-radius: 50px;
   margin-bottom: 50px;
+  @media screen and(min-width: 767px) {
+    margin-bottom: 100px;
+  }
 
   .card_inner{
     width: 92.3%;
     margin: 0 auto;
-    padding: 25px 0px 50px;
+    padding: 25px 0px 25px;
+    @media screen and(min-width: 767px) {
+      padding: 50px 0px 50px;
+    }
     .card_title{
       width: 100%;
       display: block;
       position: relative;
-      height: 60px;
-      margin-bottom: 39px;
-      @media screen and(max-width: 767px) {
-        height: 43px;
+      height: 43px;
+      margin-bottom: 25px;
+      @media screen and(min-width: 767px) {
+        height: 60px;
+        margin-bottom: 70px;
       }
       h3{
         text-align: center;
@@ -133,6 +329,9 @@ footer{
         transform: translateX(-50%);
         width: 100%;
         z-index: 1;
+        @media screen and(min-width: 767px) {
+          font-size: 55px;
+        }
       }
       img{
         width: 100%;
@@ -150,7 +349,10 @@ footer{
 
     .card_img{
       width: 100%;
-      margin-bottom: 25.5px;
+      margin-bottom: 25px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 50px;
+      }
     }
 
     p{
@@ -160,6 +362,9 @@ footer{
       display: block;
       width: 96.6%;
       margin: 0 auto;
+      @media screen and(min-width: 767px) {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -173,11 +378,17 @@ footer{
   box-shadow: 6px 6px 6px #00000029;
   border-radius: 50px;
   margin-bottom: 50px;
+  @media screen and(min-width: 767px) {
+    margin-bottom: 100px;
+  }
 
   .card_inner{
     width: 92.3%;
     margin: 0 auto;
-    padding: 25px 0px 50px;
+    padding: 25px 0px 25px;
+    @media screen and(min-width: 767px) {
+      padding: 50px 0px 50px;
+    }
 
     .card_title{
       width: 100%;
@@ -188,11 +399,17 @@ footer{
         font-size: 22.5px;
         line-height: 1.7;
         font-weight: 800;
+        @media screen and(min-width: 767px) {
+          font-size: 45px;
+        }
       }
     }
     .card_img{
       width: 100%;
-      margin-bottom: 25.5px;
+      margin-bottom: 25px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 50px;
+      }
     }
 
     p{
@@ -202,6 +419,9 @@ footer{
       display: block;
       width: 96.6%;
       margin: 0 auto;
+      @media screen and(min-width: 767px) {
+        font-size: 28px;
+      }
     }
   }
 }
@@ -222,6 +442,10 @@ footer{
   color: #FFFFFF;
   font-weight: bold;
   cursor: pointer;
+  @media screen and(min-width: 767px) {
+    font-size: 46px;
+    width: 740px;
+  }
 
   &__color-red{
     border: 2px solid #ED393B;
@@ -230,6 +454,29 @@ footer{
     &:hover{
       background-color: #ffffff;
       color: #ED393B;
+    }
+    @media screen and(min-width: 767px) {
+      display: none;
+    }
+  }
+
+  &__color-red_pc{
+    border: 2px solid #ED393B;
+    background-color: #ED393B;
+    transition: .3s;
+    position: fixed;
+    z-index: 4;
+    display: none;
+    left: 50%;
+    bottom: 16%;
+    transform: translateX(-50%);
+    box-shadow: 6px 6px 6px #00000029;
+    &:hover{
+      background-color: #ffffff;
+      color: #ED393B;
+    }
+    @media screen and(min-width: 767px) {
+      display: block;
     }
   }
 

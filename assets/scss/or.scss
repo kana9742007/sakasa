@@ -7,8 +7,14 @@
   overflow: hidden;
   .or_inner{
     padding: 50px 0px;
+    @media screen and(min-width: 767px) {
+      padding: 100px 0px 0px;
+    }
     .content_title{
-      margin-bottom: 50px
+      margin-bottom: 50px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 200px;
+      }
     }
   }
   .or_text_content{
@@ -20,6 +26,9 @@
       left: 50%;
       transform: translate(-50%,-50%);
       z-index: 1;
+      @media screen and(min-width: 767px) {
+        height: 105%;
+      }
     }
 
     .or_text_inner{
@@ -33,9 +42,10 @@
         line-height: 2.5;
         color: #000000;
         font-weight: bold;
-        text-align: center;
-        @media screen and(max-width: 767px) {
-          text-align: left;
+        text-align: left;
+        @media screen and(min-width: 767px) {
+          text-align: center;
+          font-size: 32px;
         }
       }
       .large_text{
@@ -43,13 +53,23 @@
         line-height: 2.3;
         padding-bottom: 50px;
         font-weight: 800;
+        @media screen and(min-width: 767px) {
+          font-size: 52px;
+          padding-bottom: 100px;
+        }
       }
       .text_add_bottom{
         &__50{
           padding-bottom: 50px;
+          @media screen and(min-width: 767px) {
+            padding-bottom: 100px;
+          }
         }
         &__100{
           padding-bottom: 100px;
+          @media screen and(min-width: 767px) {
+            padding-bottom: 200px;
+          }
         }
       }
     }

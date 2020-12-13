@@ -7,8 +7,14 @@
   overflow: hidden;
   .wwd_inner{
     padding: 50px 0px 100px;
+    @media screen and(min-width: 767px) {
+      padding: 100px 0px 200px;
+    }
     .content_title{
       margin-bottom: 100px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 200px;
+      }
     }
   }
   .wwd_text_content{
@@ -28,19 +34,26 @@
       margin: 0 auto 44px;
       position: relative;
       z-index: 2;
+      @media screen and(min-width: 767px) {
+        margin: 0 auto 88px;
+      }
       p{
         font-size: 17.5px;
         line-height: 2.5;
         color: #000000;
         font-weight: bold;
-        text-align: center;
-        @media screen and(max-width: 767px) {
-          text-align: left;
+        text-align: left;
+        @media screen and(min-width: 767px) {
+          text-align: center;
+          font-size: 32px;
         }
       }
       .midium_text{
         font-size: 22.5px;
         line-height: 2.2;
+        @media screen and(min-width: 767px) {
+          font-size: 45px;
+        }
         span{
           width: 25.53%;
           display: inline-block;
@@ -76,6 +89,32 @@
   }
   .card_contents{
     margin: 50px 0px 100px;
+    display: block;
+    @media screen and(min-width: 1400px) {
+      margin: 100px 0px 200px;
+      display: flex;
+    }
+    .is-pc_no-bottom{
+      @media screen and(min-width: 1400px) {
+        margin-bottom: 0px
+      }
+    }
+    .card_content__noink{
+      @media screen and(min-width: 1400px) {
+        width: 30%;
+        max-width: 600px;
+      }
+      .card_title{
+        h3{
+          @media screen and(min-width: 767px) {
+            font-size: 36px;
+          }
+          @media screen and(min-width: 1500px) {
+            font-size: 41px;
+          }
+        }
+      }
+    }
   }
   .attention_card{
     width: 92.3%;
@@ -84,11 +123,18 @@
     border-radius: 50px;
     margin: 0 auto;
     display: block;
+    @media screen and(min-width: 1400px) {
+      background-color: transparent;
+    }
 
     .attend_inner{
       width: 92.3%;
       margin: 0 auto 100px;
       padding: 25px 0px 52.5px;
+      @media screen and(min-width: 1400px) {
+        margin: 0 auto 200px;
+        padding: 38px 0px 95px;
+      }
 
       .font-red{
         font-size: 22.5px;
@@ -97,14 +143,21 @@
         line-height: 1.7;
         text-align: center;
         font-weight: 800;
+        @media screen and(min-width: 767px) {
+          font-size: 45px;
+          padding-bottom: 92px;
+        }
       }
       .detail_text{
-        font-size: 15px;
+        font-size: 14px;
         color: #3C3C3C;
         line-height: 1.8;
         width: 96.6%;
         margin: 0 auto;
         display: block;
+        @media screen and(min-width: 767px) {
+          font-size: 28px;
+        }
       }
     }
   }

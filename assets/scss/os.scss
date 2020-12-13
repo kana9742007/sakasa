@@ -7,8 +7,14 @@
   background-size: 54%;
   .os_inner{
     padding: 50px 0px 100px;
+    @media screen and(min-width: 767px) {
+      padding: 100px 0px 200px;
+    }
     .content_title{
-      margin-bottom: 50px
+      margin-bottom: 50px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 100px;
+      }
     }
   }
 
@@ -16,8 +22,15 @@
     margin-bottom: 100px;
     .card_content{
       .card_title{
+        margin-bottom: 15px;
+        @media screen and(min-width: 767px) {
+          margin-bottom: 30px;
+        }
         h3{
           font-size: 27px;
+          @media screen and(min-width: 767px) {
+            font-size: 45px;
+          }
         }
       }
     }
@@ -26,14 +39,24 @@
     .card_content{
       .card_inner{
         padding: 25px 0px 50px;
+        @media screen and(min-width: 767px) {
+          padding: 50px 0px 100px;
+        }
         .card_content_title{
           font-size: 22.5px;
           margin: 5px auto 50px;
           width: 96.6%;
           font-weight: 800;
+          @media screen and(min-width: 767px) {
+            margin: 10px auto 100px;
+            font-size: 45px;
+          }
           span{
             width: 101px;
             display: inline-block;
+            @media screen and(min-width: 767px) {
+              width: 208px;
+            }
             img{
               width: 100%;
             }
@@ -41,10 +64,20 @@
         }
 
         .inner_content{
-          margin-bottom: 50px;
+          margin-bottom: 25px;
+          @media screen and(min-width: 767px) {
+            margin-bottom: 50px;
+          }
           .card_title{
+            margin-bottom: 15px;
+            @media screen and(min-width: 767px) {
+              margin-bottom: 30px;
+            }
             h3{
               font-size: 22.5px;
+              @media screen and(min-width: 767px) {
+                font-size: 45px;
+              }
             }
           }
           .card_img{

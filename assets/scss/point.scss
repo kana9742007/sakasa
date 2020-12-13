@@ -7,18 +7,72 @@
   background-size: 54%;
   .point_inner{
     padding: 50px 0px;
+    @media screen and(min-width: 767px) {
+      padding: 100px 0px 200px;
+    }
     .content_title{
-      margin-bottom: 50px
+      margin-bottom: 50px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 100px;
+      }
     }
   }
 
   .card_contents{
     margin-bottom: 100px;
-    .color-red-text{
-      margin-top: 25px;
-      color: #FF0000;
-      line-height: 1.9;
-      font-size: 14px;
+    display: block;
+    @media screen and(min-width: 1400px) {
+      margin-bottom: 0px;
+      display: flex;
+    }
+    .is-pc_no-bottom{
+      @media screen and(min-width: 1400px) {
+        margin-bottom: 0px
+      }
+    }
+    .card_content{
+      @media screen and(min-width: 1400px) {
+        width: 30%;
+        max-width: 600px;
+      }
+      .card_title{
+        h3{
+          @media screen and(min-width: 767px) {
+            font-size: 41px;
+          }
+          @media screen and(min-width: 1500px) {
+            font-size: 51px;
+          }
+        }
+      }
+    }
+    .is-sp{
+      display: block;
+      @media screen and(min-width: 1400px) {
+        display: none;
+      }
+    }
+  }
+  .color-red-text{
+    margin-top: 25px;
+    color: #FF0000;
+    line-height: 1.9;
+    font-size: 14px;
+    @media screen and(min-width: 1400px) {
+      margin-top: 20px;
+      font-size: 28px;
+      text-align: center;
+      width: 30%;
+      max-width: 600px;
+      float: right;
+      height: 53px;
+      padding-right: 2%;
+    }
+  }
+  .is-pc{
+    display: none;
+    @media screen and(min-width: 1400px) {
+      display: block;
     }
   }
 }

@@ -7,8 +7,14 @@
   overflow: hidden;
   .vision_inner{
     padding: 50px 0px 100px;
+    @media screen and(min-width: 767px) {
+      padding: 90px 0px 200px;
+    }
     .content_title{
-      margin-bottom: 50px
+      margin-bottom: 50px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 200px;
+      }
     }
   }
   .vision_text_content{
@@ -32,23 +38,34 @@
         line-height: 2.5;
         color: #000000;
         font-weight: bold;
-        text-align: center;
-        @media screen and(max-width: 767px) {
-          text-align: left;
+        text-align: left;
+        @media screen and(min-width: 767px) {
+          text-align: center;
+          font-size: 32px;
         }
       }
       .large_text{
         font-size: 34.5px;
         line-height: 1.7;
         padding-bottom: 50px;
+        @media screen and(min-width: 767px) {
+          font-size: 69px;
+          padding-bottom: 69px;
+        }
       }
       .midium_text{
         font-size: 22.5px;
         line-height: 2.6;
+        @media screen and(min-width: 767px) {
+          font-size: 45px;;
+        }
       }
       .semi-midium_text{
         font-size: 27.5px;
         line-height: 2.2;
+        @media screen and(min-width: 767px) {
+          font-size: 55px;
+        }
         span{
           width: 43.3%;
           max-width: 325.38px;

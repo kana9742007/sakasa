@@ -25,14 +25,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+    <script src="assets/js/header.js"></script>
   </head>
   <body id="pagetop">
     <header>
-      <div class="header_inner">
+      <div class="header_inner block_sp">
         <p class="header__top">2021年1月スタート！</p>
         <p class="header__bottom"><span><img src="assets/img/default/header_logo.png"></span>事前申し込み受付中！</p>
       </div>
+      <div class="header_pc">
+        <a class="header_logo" href="#"><img src="assets/img/default/black_logo.png"></a>
+        <a href="#1">特徴</a>
+        <a href="#2">サービス内容</a>
+        <a href="#3">サービスの流れ</a>
+        <a href="#4">料金プラン</a>
+        <a href="#5">FAQ</a>
+      </div>
     </header>
+    <a id="js-btn">
+      <span class="inner_line" id="line1"></span>
+      <span class="inner_line" id="line2"></span>
+      <span class="inner_line" id="line3"></span>
+    </a>
+    <nav id="nav" class="sp_menu">
+      <ul class="menu">
+        <a class="header_logo" href="#"><img src="assets/img/default/black_logo.png"></a>
+        <p>Menu</p>
+        <li><a href="#1">TRIETについて</a></li>
+        <li><a href="#2">サービス内容</a></li>
+        <li><a href="#3">サービスの流れ</a></li>
+        <li><a href="#4">料金プラン</a></li>
+        <li><a href="#5">FAQ</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="contact_button contact_button__color-red_pc">お申し込みはこちら</a>
     <div class="top_wrapper">
       <picture>
         <source media="(min-width: 767px)" srcset="assets/img/top/TRIET_KV_pr_final_1211_final.png">
@@ -42,7 +68,7 @@
         <a href="#" class="contact_button contact_button__color-black">お申し込みはこちら</a>
       </div>
     </div>
-    <div class="point_wrapper">
+    <div id="1" class="point_wrapper">
       <div class="point_inner">
         <div class="content_title">
           <h2>POINT</h2>
@@ -50,7 +76,7 @@
           <span></span>
         </div>
         <ul class="card_contents">
-          <li class="card_content">
+          <li class="card_content is-pc_no-bottom">
             <div class="card_inner">
               <div class="card_title">
                 <h3>0.5畳あればOK</h3>
@@ -60,7 +86,7 @@
               <p>近くにジムがなくても、全てのトレーニングが家で完結！器具の収納スペースも0.5畳分なので誰でも導入可能！</p>
             </div>
           </li>
-          <li class="card_content">
+          <li class="card_content is-pc_no-bottom">
             <div class="card_inner">
               <div class="card_title">
                 <h3>一生使える知識</h3>
@@ -78,12 +104,15 @@
               </div>
               <img class="card_img" src="assets/img/point/point_2.png">
               <p>日々の食事やトレーニングの悩み、などどんなことでもLINEで簡単に相談可能！</p>
-              <p class="color-red-text">
+              <p class="color-red-text is-sp">
                 ※本サービスはLINEを利用します
               </p>
             </div>
           </li>
         </ul>
+        <p class="color-red-text is-pc">
+          ※本サービスはLINEを利用します
+        </p>
         <a href="#" class="contact_button contact_button__color-red">お申し込みはこちら</a>
       </div>
     </div>
@@ -134,7 +163,7 @@
         </div>
       </div>
     </div>
-    <div class="wwd_wrapper">
+    <div id="2" class="wwd_wrapper">
       <div class="wwd_inner">
         <div class="content_title">
           <h2>WHAT WE DO</h2>
@@ -169,7 +198,7 @@
           <img src="assets/img/wwd/arrow.png">
         </div>
         <ul class="card_contents">
-          <li class="card_content__noink">
+          <li class="card_content__noink is-pc_no-bottom">
             <div class="card_inner">
               <div class="card_title">
                 <h3>ボディメイクに関する<br>
@@ -180,7 +209,7 @@
               <p>トレーニングってどう始めたらいいのか？メニューは？食事は？わからないことだらけ・・・TRIETは、あなたの疑問にお答えします。</p>
             </div>
           </li>
-          <li class="card_content__noink">
+          <li class="card_content__noink is-pc_no-bottom">
             <div class="card_inner">
               <div class="card_title">
                 <h3>毎日のリマインドと<br>
@@ -255,7 +284,7 @@
         <a href="#" class="contact_button contact_button__color-red">お申し込みはこちら</a>
       </div>
     </div>
-    <div class="os_wrapper">
+    <div id="3" class="os_wrapper">
       <div class="os_inner">
         <div class="content_title">
           <h2>OUR SERVICE</h2>
@@ -398,7 +427,7 @@
         </ul>
       </div>
     </div>
-    <div class="price_wrapper">
+    <div id="4" class="price_wrapper">
       <div class="price_inner">
         <div class="content_title">
           <h2>PRICE</h2>
@@ -410,7 +439,7 @@
             <h3>基本コース (3ヶ月)</h3>
             <img src="assets/img/default/title_line.png">
           </div>
-          <div class="price_image_text">
+          <div class="price_image_text add_bold">
             <p>本コースを通じて理論的な
               <br>ダイエットの知識を教えます
             </p>
@@ -441,7 +470,7 @@
             <h3>卒業生コース</h3>
             <img src="assets/img/default/title_line.png">
           </div>
-          <div class="price_image_text">
+          <div class="price_image_text add_bold">
             <p>基本コース終了後も、<br>
             さらにボディメイクを<br>
             継続したい方はこちら
@@ -502,7 +531,7 @@
         </div>
       </div>
     </div>
-    <div class="faq_wrapper">
+    <div id="5" class="faq_wrapper">
       <div class="faq_inner">
         <div class="content_title">
           <h2>FAQs</h2>
@@ -610,7 +639,7 @@
               </p>
               <span></span>
               <p class="faq_detail">
-                テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　
+                自炊をしない方にも本サービスは多くご利用いただいております。外食する場合、コンビニの場合などでの食事のアドバイスも行なっておりますので、是非ご利用ください！
               </p>
             </div>
           </div>
@@ -622,11 +651,11 @@
               </p>
               <span></span>
               <p class="faq_detail">
-                テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　
+                ムキムキになるまで筋肉をつけるのは簡単ではありません！望んでも中々ゴリゴリのマッチョにはなれないのが現実です。なので、あまり気にしすぎることはありません。カウンセリング時に理想の体型をお聞きし、それに合わせたメニューを組みますので、男性でも女性でもお気軽にご利用ください！
               </p>
             </div>
           </div>
-          <div class="faq_content no-bottom">
+          <div class="faq_content">
             <p class="faq_number">Q.10</p>
             <div class="faq_content_inner">
               <p class="faq_title">
@@ -634,7 +663,19 @@
               </p>
               <span></span>
               <p class="faq_detail">
-                テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　テキストが入ります　
+                申し訳ございません。本サービスはLINEを利用したサービスとなっております。ご利用いただくにはLINEのご利用が前提となっております。
+              </p>
+            </div>
+          </div>
+          <div class="faq_content no-bottom">
+            <p class="faq_number">Q.11</p>
+            <div class="faq_content_inner">
+              <p class="faq_title">
+                サポートしてもらえるのは<br>AIですか？人間ですか？
+              </p>
+              <span></span>
+              <p class="faq_detail">
+                TRIETでは、知識豊富なトレーナーが一つ一つ丁寧に人力で対応させていただきます。一人でも多くの方に、好きな身体になってもらいたい。その一心で行なっています。一緒に二人三脚で理想の身体になりましょう！
               </p>
             </div>
           </div>

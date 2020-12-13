@@ -7,8 +7,14 @@
   background-size: 54%;
   .uv_inner{
     padding: 50px 0px 100px;
+    @media screen and(min-width: 767px) {
+      padding: 100px 0px 200px;
+    }
     .content_title{
-      margin-bottom: 50px
+      margin-bottom: 50px;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 100px;
+      }
     }
   }
 
@@ -16,17 +22,35 @@
     .card_content{
       box-shadow: none;
       .user_name{
-        margin-bottom: 22.3px;
+        margin-bottom: 15px;
         font-size: 20px;
         text-align: center;
         line-height: 1;
         font-weight: bold;
+        @media screen and(min-width: 767px) {
+          font-size: 40px;
+          margin-bottom: 30px;
+        }
       }
       .card_title{
         height: 86.5px;
+        margin-bottom: 15px;
+        @media screen and(min-width: 767px) {
+          margin-bottom: 30px;
+          height: 173px;
+        }
         h3{
           font-size: 22.5px;
           line-height: 1.7;
+          @media screen and(min-width: 767px) {
+            font-size: 45px;
+          }
+        }
+      }
+      .card_img{
+        margin-bottom: 15px;
+        @media screen and(min-width: 767px) {
+          margin-bottom: 30px;
         }
       }
     }
