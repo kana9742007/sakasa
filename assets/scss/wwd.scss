@@ -100,6 +100,7 @@
     @media screen and(min-width: 1400px) {
       margin: 75px 0px 150px;
       display: flex;
+      justify-content: space-evenly;
     }
     .is-pc_no-bottom{
       @media screen and(min-width: 1400px) {
@@ -108,13 +109,14 @@
     }
     .card_content__noink{
       @media screen and(min-width: 1400px) {
-        width: 31.25%;
-        max-width: 450px;
+        width: 27%;
+        max-width: 375px;
+        margin: 0px;
       }
       .card_title{
         h3{
           @media screen and(min-width: 767px) {
-            font-size: 33.75px;
+            font-size: 30.75px;
           }
         }
       }
@@ -143,7 +145,7 @@
       .font-red{
         font-size: 22.5px;
         color: #FF0000;
-        padding-bottom: 50px;
+        padding-bottom: 25px;
         line-height: 1.7;
         text-align: center;
         font-weight: 800;
