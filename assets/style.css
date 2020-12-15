@@ -77,7 +77,7 @@ header {
   z-index: 100;
   border-radius: 50px;
   right: 18px;
-  top: 100px; }
+  top: 90px; }
   @media screen and (max-width: 767px) {
     #js-btn {
       display: block; } }
@@ -410,7 +410,8 @@ footer {
     width: 342.75px;
     text-align: center;
     font-size: 25.5px;
-    line-height: 1; }
+    line-height: 1;
+    font-weight: bold; }
     .contact_button__color-red_pc:hover {
       background-color: #ffffff;
       color: #ED393B; }
@@ -1204,6 +1205,12 @@ a {
     @media screen and (min-width: 767px) {
       .point_wrapper .card_contents .card_content .card_title h3 {
         font-size: 36px; } }
+    .point_wrapper .card_contents .color-red-text {
+      margin-top: 25px;
+      color: #FF0000;
+      line-height: 1.9;
+      font-size: 14px;
+      letter-spacing: 2.16px; }
     .point_wrapper .card_contents .is-sp {
       display: block; }
       @media screen and (min-width: 1400px) {

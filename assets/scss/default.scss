@@ -93,7 +93,7 @@ header{
   z-index: 100;
   border-radius: 50px;
   right: 18px;
-  top: 100px;
+  top: 90px;
   @media screen and (max-width: 767px) {
     display: block;
   }
@@ -499,6 +499,7 @@ footer{
     text-align: center;
     font-size: 25.5px;
     line-height: 1;
+    font-weight: bold;
     &:hover{
       background-color: #ffffff;
       color: #ED393B;

@@ -10,7 +10,7 @@ $(function () {
     // 移動先を数値で取得
     var position = target.offset().top;
     // スムーススクロール
-    $('body,html').animate({ scrollTop: position -100 }, speed, 'swing');
+    $('body,html').animate({ scrollTop: position - 50 }, speed, 'swing');
     return false;
   });
 });
